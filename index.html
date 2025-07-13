@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Malla Interactiva - Ingeniería Electrónica</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #ffe6f0;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #cc3366;
+      margin-bottom: 40px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .year {
+      background: #ffb3cc;
+      color: #800040;
+      padding: 12px 20px;
+      margin: 30px 0 10px;
+      border-radius: 8px;
+      font-size: 1.3rem;
+      font-weight: bold;
+    }
+
+    .year-block {
+      margin-bottom: 40px;
+    }
+
+    .cuatrimestres {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .cuatrimestre {
+      flex: 1;
+      min-width: 280px;
+      background-color: #fff0f5;
+      border-radius: 12px;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .cuatrimestre h3 {
+      text-align: center;
+      color: #a00050;
+      margin-top: 0;
+      font-size: 1.1rem;
+    }
+
+    .card {
+      background: #ffe6f2;
+      border: 2px solid transparent;
+      border-radius: 10px;
+      padding: 10px;
+      margin: 8px 0;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-weight: 500;
+    }
+
+    .card:hover {
+      background-color: #fdd6e6;
+      border-color: #d47da0;
+    }
+
+    .card.aprobada {
+      background-color: #d8bfd8;
+      border-color: #800080;
+      text-decoration: underline;
+      font-weight: bold;
+      color: #4b004b;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Malla Interactiva - Ingeniería Electrónica</h1>
+
+  <!-- PRIMER AÑO -->
+  <div class="year-block">
+    <div class="year">Primer año (CBC)</div>
+    <div class="cuatrimestres">
+      <div class="cuatrimestre">
+        <h3>Materias</h3>
+        <div class="card" data-id="pensamiento_cientifico">Pensamiento Científico</div>
+        <div class="card" data-id="sociedad_estado">Sociedad y Estado</div>
+        <div class="card" data-id="pensamiento_computacional">Pensamiento Computacional</div>
+        <div class="card" data-id="fisica">Física</div>
+        <div class="card" data-id="analisis_matematico_a">Análisis Matemático A</div>
+        <div class="card" data-id="algebra_a">Álgebra A</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SEGUNDO AÑO -->
+  <div class="year-block">
+    <div class="year">Segundo año</div>
+    <div class="cuatrimestres">
+      <div class="cuatrimestre">
+        <h3>3er Cuatrimestre</h3>
+        <div class="card" data-id="analisis_matematico_ii">Análisis Matemático II</div>
+        <div class="card" data-id="fisica_sistemas_particulas">Física de los Sistemas de Partículas</div>
+        <div class="card" data-id="introduccion_ie">Introducción a la Ingeniería Electrónica</div>
+        <div class="card" data-id="algoritmos_programacion">Algoritmos y Programación</div>
+      </div>
+      <div class="cuatrimestre">
+        <h3>4to Cuatrimestre</h3>
+        <div class="card" data-id="algebra_lineal">Álgebra Lineal</div>
+        <div class="card" data-id="electricidad_magnetismo_calor">Electricidad, Magnetismo y Calor</div>
+        <div class="card" data-id="intro_dispositivos">Introducción a los Dispositivos Electrónicos</div>
+        <div class="card" data-id="sistemas_digitales">Sistemas Digitales</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TERCER AÑO -->
+  <div class="year-block">
+    <div class="year">Tercer año</div>
+    <div class="cuatrimestres">
+      <div class="cuatrimestre">
+        <h3>5to Cuatrimestre</h3>
+        <div class="card" data-id="probabilidad_estadistica">Probabilidad y Estadística</div>
+        <div class="card" data-id="senales_sistemas">Señales y Sistemas</div>
+        <div class="card" data-id="analisis_circuitos">Análisis de Circuitos</div>
+        <div class="card" data-id="redes_comunicaciones">Redes de Comunicaciones</div>
+      </div>
+      <div class="cuatrimestre">
+        <h3>6to Cuatrimestre</h3>
+        <div class="card" data-id="planificacion_proyectos">Planificación de Proyectos</div>
+        <div class="card" data-id="circuitos_microelectronicos">Circuitos Microelectrónicos</div>
+        <div class="card" data-id="procesos_estocasticos">Procesos Estocásticos</div>
+        <div class="card" data-id="control_automatico">Control Automático</div>
+        <div class="card" data-id="sistemas_embebidos">Taller de Sistemas Embebidos</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CUARTO AÑO -->
+  <div class="year-block">
+    <div class="year">Cuarto año</div>
+    <div class="cuatrimestres">
+      <div class="cuatrimestre">
+        <h3>7mo Cuatrimestre</h3>
+        <div class="card" data-id="quimica_electroquimica">Química y Electroquímica</div>
+        <div class="card" data-id="electromagnetismo">Electromagnetismo Aplicado</div>
+        <div class="card" data-id="automatizacion_control">Taller de Automatización y Control</div>
+        <div class="card" data-id="procesamiento_senales">Taller de Procesamiento de Señales</div>
+      </div>
+      <div class="cuatrimestre">
+        <h3>8vo Cuatrimestre</h3>
+        <div class="card" data-id="dispositivos_semiconductores">Dispositivos Semiconductores</div>
+        <div class="card" data-id="comunicaciones_digitales">Taller de Comunicaciones Digitales</div>
+        <div class="card" data-id="diseno_circuitos">Taller de Diseño de Circuitos Electrónicos</div>
+        <div class="card" data-id="higiene_seguridad">Higiene y Seguridad</div>
+        <div class="card" data-id="optativas_1">Electivas / Optativas</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- QUINTO AÑO -->
+  <div class="year-block">
+    <div class="year">Quinto año</div>
+    <div class="cuatrimestres">
+      <div class="cuatrimestre">
+        <h3>9no Cuatrimestre</h3>
+        <div class="card" data-id="legislacion">Legislación y Ejercicio Profesional</div>
+        <div class="card" data-id="gestion_proyectos">Gestión de Proyectos Electrónicos</div>
+        <div class="card" data-id="tif_1">Trabajo Integrador Final</div>
+        <div class="card" data-id="optativas_2">Electivas / Optativas</div>
+      </div>
+      <div class="cuatrimestre">
+        <h3>10mo Cuatrimestre</h3>
+        <div class="card" data-id="impacto_social">Impacto Social, Ambiental y Desarrollo Sustentable</div>
+        <div class="card" data-id="tif_2">Trabajo Integrador Final</div>
+        <div class="card" data-id="optativas_3">Electivas / Optativas</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  const materias = document.querySelectorAll(".card");
+
+  const aprobadas = JSON.parse(localStorage.getItem("materiasAprobadas") || "[]");
+
+  materias.forEach(materia => {
+    const id = materia.dataset.id;
+    if (aprobadas.includes(id)) {
+      materia.classList.add("aprobada");
+    }
+
+    materia.addEventListener("click", () => {
+      materia.classList.toggle("aprobada");
+
+      const nuevasAprobadas = [];
+      document.querySelectorAll(".card.aprobada").forEach(m => {
+        nuevasAprobadas.push(m.dataset.id);
+      });
+      localStorage.setItem("materiasAprobadas", JSON.stringify(nuevasAprobadas));
+    });
+  });
+</script>
+
+</body>
+</html>
